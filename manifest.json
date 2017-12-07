@@ -3,7 +3,8 @@
     
     "name": "Inline native HLS player",
     "description": "Extension allows browser to play native HLS videos using hls.js library (https://github.com/video-dev/hls.js/)",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "icons": { "128": "icon128.png" },
     
     "content_scripts": [
         {
