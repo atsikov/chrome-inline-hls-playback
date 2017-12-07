@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Inline native HLS player",
+    "description": "Extension allows browser to play native HLS videos using hls.js library (https://github.com/video-dev/hls.js/)",
+    "version": "0.0.1",
+    
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["detectHlsVideo.js"],
+            "all_frames": true
+        }
+    ],
+    
+    "web_accessible_resources": [
+        "injectHlsJs.js"
+    ]
+}
